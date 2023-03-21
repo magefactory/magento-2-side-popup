@@ -16,7 +16,7 @@ Show on right side of pages a info button with popup on click
 
 #### - via ftp/sftp: 
 
-unpack archive and upload files in app/code/magefactory/SidePopup
+unpack archive and upload files in app/code/Magefactory/SidePopup
 
 * bin/magento setup:upgrade
 
@@ -29,7 +29,7 @@ unpack archive and upload files in app/code/magefactory/SidePopup
 ## DEMO
 
 * you can see demo **here** - 
-[https://magefactory.alexander-naumov.com/](https://magefactory.alexander-naumov.com/affirm-water-bottle.html 
+[https://magefactory.alexander-naumov.com/](https://magefactory.alexander-naumov.com/ 
 "https://magefactory.alexander-naumov.com/")
 
 ## RELEASE NOTES
