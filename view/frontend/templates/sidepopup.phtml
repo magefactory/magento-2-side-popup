@@ -1,0 +1,50 @@
+<?php
+/**
+ * Copyright © magefactory (https://magefactory.alexander-naumov.com)
+ * Author Alexander Naumov (https://www.alexander-naumov.com)
+ * See LICENSE for the license details.
+ */
+declare(strict_types=1);
+
+use Magento\Framework\View\Element\Template;
+
+/** @var Template $block */
+?>
+
+
+
+<div id="sticky-side">
+  <div class="contact-btn"><i class="icon-info"></i></div>
+  <div id="side-box">
+    <div class="side-header">
+      Brauchen Sie Hilfe oder haben Fragen?<br><i class="icon-close" aria-hidden="true"></i></div>
+    <div class="tax-switcher">
+      <div class="choose">Sind Sie Firmenkunde oder Privatkunde?</div>
+      <select class="tax_display_select" name="tax_display">
+        <option value="empty"></option>
+        <option value="2">Privatkunde (inkl. MwSt.)</option>
+        <option value="1">Geschäftskunde (exkl. MwSt)</option>
+      </select>
+    </div>
+    <div class="contact-boxes">
+      <div class="phone"><a href="tel:+4997217939811"><i class="icon-contact"></i><span>Rufen Sie uns an   +4997217939811</span></a></div>
+      <div class="mail"><a href="#"><i class="icon-contact_3"></i><span>Email schreiben</span></a></div>
+      <div class="newslt"><a href="#"><i class="icon-checkmark"></i><span>Newsletter abonieren</span></a></div>
+      <div class="chat"><a href="#"><i class="icon-contact_2"></i><span>Chat starten</span></a></div>
+    </div>
+  </div>
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "tier-price": {
+                        "component": "Magefactory_SidePopup/js/side-popup"
+                    }
+                }
+            }
+        }
+    }
+</script>

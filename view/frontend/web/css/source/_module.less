@@ -1,0 +1,121 @@
+
+
+@white:#fff;
+@color-main-one:#062654;
+
+#sticky-side {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  display: flex;
+  align-items: center;
+  .contact-btn {
+    height: 50px;
+    width: 30px;
+    background-color: @color-main-one;
+    color: @white;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fas {
+      font-size: 29px;
+    }
+  }
+  #side-box {
+    padding: 10px;
+    border-right: 0;
+    height: auto;
+    max-height: calc(100vh -20px);
+    overflow-y: auto;
+    background: @color-main-one;
+    width: 300px;
+    margin-right: -300px;
+    z-index: 9999;
+    transition: all 0.5s;
+    box-sizing: border-box;
+    .side-header {
+      display: block;
+      background-color: @color-main-one;
+      padding: 0 10px;
+      font-size: 15px;
+      color: @white;
+      height: 40px;
+      line-height: 25px;
+      position: relative;
+      font-family: barlow, sans-serif;
+      span {
+        font-size: 15px;
+      }
+      i {
+        font-size: 10px;
+        position: absolute;
+        right: 0;
+        top: 10%;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+    }
+  }
+  .open-box {
+    margin-right: 0 !important;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  .tax-switcher {
+    background: #e9ebfa;
+    font-family: barlow, sans-serif;
+    .choose {
+      color: #333333;
+      font-size: 13px;
+      padding: 5px 15px 10px;
+    }
+    select {
+      width: 100%;
+      height: 30px;
+      &:focus {
+        outline: 0;
+        border: 0;
+      }
+    }
+  }
+  .contact-boxes {
+      background: @color-main-one;
+    a {
+      color: @white;
+      display: block;
+      margin-top: 10px;
+      margin-left: 15px;
+      text-decoration: none;
+      }
+
+    span {
+      margin-top: 10px;
+      margin-left: 15px;
+      font-weight: 400;
+      font-family:barlow, sans-serif;
+    }
+    }
+    .phone {
+
+      height: 33px;
+      border-bottom: 0.25px solid @white;
+    }
+    .mail {
+      height: 33px;
+      border-bottom: 1px solid @white;
+    }
+    .newslt {
+      height: 33px;
+      border-bottom: 1px solid @white;
+    }
+    .chat {
+      height: 30px;
+    }
+  }
+
